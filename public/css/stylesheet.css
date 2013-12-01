@@ -24,7 +24,7 @@ html {
     padding: 12px;
     color: white;
     max-width: 98%;
-    max-height: 265px;
+    max-height: 325px;
     overflow: scroll;
 }
 #bl {
@@ -34,6 +34,7 @@ html {
 }
 #tabs {
     font-size: 25px;
+    margin-bottom: 13px;
 }
 table td {
     color: white;
