@@ -24,6 +24,15 @@ function changeTab(tab) {
     activeTab = tab;
 }
 
+$(document).ready(function() {
+    var d = new Date();
+    $('#upcoming-gigs .gig').each(function() {
+        if ($(this).data('date') < d.getTime() / 1000) {
+            $(this).detach().appendTo('#past-gigs');
+        }
+    });
+});
+
 function sizeSlider() {
     if ($(window).height() < 665) $('#slider').css('max-height', 100);
     else $('#slider').css('max-height', 325);
@@ -40,4 +49,3 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 
 ga('create', 'UA-46205021-1', 'petermanheim.com');
 ga('send', 'pageview');
-
