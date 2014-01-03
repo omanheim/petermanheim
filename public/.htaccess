@@ -1,0 +1,19 @@
+<IfModule mod_expires.c>
+# Enable expirations
+ExpiresActive On 
+# Default directive
+ExpiresDefault "access plus 1 month"
+# My favicon
+ExpiresByType images/musicnote-favicon.ico  "access plus 1 year"
+# Images
+ExpiresByType images/email-icon.png "access plus 1 month"
+ExpiresByType images/facebook-icon.png "access plus 1 month"
+ExpiresByType images/linkedin-icon.png "access plus 1 month"
+ExpiresByType images/soundcloud-icon.png "access plus 1 month"
+ExpiresByType images/whitet.png "access plus 1 month"
+# CSS
+ExpiresByType css/style.css "access plus 1 month"
+# Javascript
+ExpiresByType js/main.js "access plus 1 month"
+ExpiresByType js/jquery-latest.min.js "access plus 1 year"
+</IfModule>
